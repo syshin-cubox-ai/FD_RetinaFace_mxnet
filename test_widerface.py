@@ -19,6 +19,8 @@ from rcnn.processing.bbox_transform import bbox_overlaps
 from rcnn.dataset import retinaface
 from retinaface import RetinaFace
 
+os.environ['MXNET_CUDNN_AUTOTUNE_DEFAULT'] = '0'
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -51,7 +53,7 @@ def parse_args():
     # testing
     parser.add_argument('--prefix',
                         help='model to test with',
-                        default='',
+                        default='R50',
                         type=str)
     parser.add_argument('--epoch',
                         help='model to test with',
@@ -68,7 +70,7 @@ def parse_args():
                         type=float)
     parser.add_argument('--mode',
                         help='test mode, 0 for fast, 1 for accurate',
-                        default=1,
+                        default=0,
                         type=int)
     #parser.add_argument('--pyramid', help='enable pyramid test', action='store_true')
     #parser.add_argument('--bbox-vote', help='', action='store_true')

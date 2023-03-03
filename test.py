@@ -6,6 +6,8 @@ import os
 import glob
 from retinaface import RetinaFace
 
+os.environ['MXNET_CUDNN_AUTOTUNE_DEFAULT'] = '0'
+
 thresh = 0.8
 scales = [1024, 1980]
 
