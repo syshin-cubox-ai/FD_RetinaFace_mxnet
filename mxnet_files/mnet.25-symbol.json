@@ -3186,9 +3186,9 @@
       "inputs": [[272, 0, 0]]
     }, 
     {
-      "op": "SoftmaxActivation", 
+      "op": "softmax", 
       "name": "face_rpn_cls_prob_stride32", 
-      "attrs": {"mode": "channel"}, 
+      "attrs": {"axis": "1"}, 
       "inputs": [[273, 0, 0]]
     }, 
     {
@@ -3929,9 +3929,9 @@
       "inputs": [[349, 0, 0]]
     }, 
     {
-      "op": "SoftmaxActivation", 
+      "op": "softmax", 
       "name": "face_rpn_cls_prob_stride16", 
-      "attrs": {"mode": "channel"}, 
+      "attrs": {"axis": "1"}, 
       "inputs": [[350, 0, 0]]
     }, 
     {
@@ -4672,9 +4672,9 @@
       "inputs": [[426, 0, 0]]
     }, 
     {
-      "op": "SoftmaxActivation", 
+      "op": "softmax", 
       "name": "face_rpn_cls_prob_stride8", 
-      "attrs": {"mode": "channel"}, 
+      "attrs": {"axis": "1"}, 
       "inputs": [[427, 0, 0]]
     }, 
     {
